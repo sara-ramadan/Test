@@ -5,7 +5,7 @@ pipeline {
     
         stage("eks ") {
            steps {
-                 sh 'kubectl get nodes'
+                 sh 'kubectl config set-context lastcapstoneproject'
             }
         }
     }
