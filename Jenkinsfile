@@ -6,7 +6,7 @@ pipeline {
         stage("eks ") {
            steps {
 
-                 sh 'kubectl config use-context arn:aws:eks:us-east-1:768362009725:cluster/lastcapstoneproject'
+                 sh 'kubectl config use-context lastcapstoneproject'
                  sh 'kubectl get nodes'
             }
         }
